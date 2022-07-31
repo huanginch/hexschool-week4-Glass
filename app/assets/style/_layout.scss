@@ -1,0 +1,208 @@
+header {
+    background: $primary;
+    padding: 0 12px;
+    img {
+            width: 80px;
+            height: 72px;
+            margin: 4px 0;
+            object-fit: contain;
+            padding-left: 12px;
+        }
+    .navbar {
+        display: flex;
+        li {
+            @include phone {
+                width: 50%;
+                border: 1px solid $light;
+            }
+        }
+        a {
+            color: $light;
+            display: block;
+            text-align: center;
+            padding: 25px 0px 25px 64px;
+            line-height: 30px;
+            font-size: 20px;
+
+            &:hover,
+            &:focus {
+                opacity: 0.5;
+                
+                @include phone {
+                    background: $hover;
+                    color: $light;
+                }
+            }
+
+            @include phone {
+                display: block;
+                padding: 12px 62px;
+                transition: all 0.3s;
+            }
+        }
+
+        @include phone {
+            width: 100%;
+            max-height: 0px;
+            flex-wrap: wrap;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 0;
+            transform: translateY(100%);
+            background: $primary;
+            overflow: hidden;
+            transition: max-height 0.7s;
+        }
+    }
+    .menu-btn {
+        color: $light;
+        display: none;
+        font-size: 30px;
+
+        @include phone {
+            display: flex;
+        }
+    }
+
+    @include phone {
+        position: relative;
+        .show {
+            max-height: 136px;
+            text-align: center;
+        }
+    }
+}
+
+.header-container {
+    max-width: 1296px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include pad {
+        max-width: 696px;
+    }
+
+    @include phone {
+        max-width: 348px;
+    }
+}
+
+footer {
+    background: $primary;
+    color: $light;
+    padding: 48px 12px 0 12px;
+    a {
+        color: $light;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+    .contact {
+        max-width: 1296px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-bottom: 1px solid $light;
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+
+        @include phone {
+            max-width: 348px;
+        }
+    }
+    .social {
+        display: flex;
+        img {
+            width: 48px;
+
+            @include phone {
+                width: 24px;
+            }
+        }
+        li:not(:last-child) {
+            margin-right: 48px;
+
+            @include phone {
+                margin-right: 8px;
+            }
+        }
+    }
+    .contact__navbar {
+        display: flex;
+        line-height: $lh-s;
+        font-size: $font-s;
+        justify-content: space-between;
+        margin-bottom: 36px;
+
+        @include phone {
+            display: none;
+        }
+    }
+    .contact__mail,
+    .contact__phone {
+        a {
+            font-family: "Noto Sans TC";
+            line-height: $lh-l;
+            font-size: $font-l;
+
+            @include phone {
+                line-height: $lh-s;
+                font-size: $font-s;
+            }
+        } 
+        span {
+            line-height: $lh-l;
+            font-size: $font-l;
+
+            @include phone {
+                    line-height: $lh-s;
+                    font-size: $font-s;
+            }
+        }
+        
+    }
+
+    .copyright {
+        max-width: 1296px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-bottom: 32px;
+        text-align: center;
+        p {
+            line-height: $lh-s;
+            font-size: $font-s;
+            @include phone {
+                width: 100%;
+            }
+        }
+
+        @include phone {
+            text-align: left;
+            max-width: 348px;
+        }
+    }
+
+    .copyright__links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        li {
+            @include phone {
+                width: 100%;
+            }
+        }
+        a {
+            line-height: 21px;
+            font-size: 14px;
+            margin-right: 48px;
+        }
+    }
+}
+

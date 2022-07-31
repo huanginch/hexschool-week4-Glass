@@ -1,0 +1,340 @@
+.home-banner {
+    background: url("../images/home-header.png") no-repeat;
+    width: 100%;
+    height: 787px;
+    background-size: cover;
+    background-position: center;
+    color: $secondary;
+    padding: 0 12px;
+    h1 {
+        line-height: $lh-2xl;
+        font-size: $font-2xl;
+        font-weight: bold;
+
+        @include pad {
+            line-height: $lh-l;
+            font-size: $font-l;
+        }
+    }
+    h2 {
+        line-height: $lh-l;
+        font-size: $font-m;
+
+        @include pad {
+            line-height: $lh-s;
+            font-size: $font-s;
+        }
+    }
+    button {
+        line-height: 30px;
+        font-size: 20px;
+        border: none;
+        background-color: $primary;
+        color: $light;
+        padding: 6px 12px;
+        cursor: pointer;
+    }
+    .banner-title {
+        max-width: 1296px;
+        margin: 0 auto;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding-top: 296px;
+
+        @include pad {
+            padding-top: 144px;
+        }
+    }
+
+    @include pad {
+        background: url("../images/home-header-sm.png") no-repeat;
+        width: 100%;
+        height: 396px;
+        background-size: cover;
+        background-position: center;
+        color: $secondary;
+    }
+}
+
+.intro {
+    background: $info;
+    .intro-content {
+        max-width: 1296px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 12px;
+        h2 {
+            color: $secondary;
+            line-height: $lh-xl;
+            font-size: $font-xl;
+            font-weight: bold;
+            padding: 80px 0 24px 0;
+
+            @include phone {
+                line-height: $lh-m;
+                font-size: $font-m;
+            }
+        }
+    }
+    .intro-cards {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        padding-bottom: 80px;
+        margin: 0 -12px;
+        li {
+            padding: 0 12px;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 16px;
+        }
+        h3 {
+            color: $secondary;
+            line-height: $lh-m;
+            font-size: $font-m;
+            font-weight: 900;
+            margin-bottom: 8px;
+        }
+        p {
+            text-align: left;
+            max-width: 306px;
+        }
+
+        @include pad {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.classic {
+    max-width: 1296px;
+    margin: 0 auto;
+    color: $secondary;
+    text-align: center;
+    padding: 0 12px;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 -12px 80px -12px;
+
+        @include pad {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    li {
+        padding: 0 12px;
+    }
+    h2 {
+        line-height: $lh-xl;
+        font-size: $font-xl;
+        margin: 80px 0 48px 0;
+        font-weight: 900;
+
+        @include phone {
+            line-height: $lh-m;
+            font-size: $font-m;
+        }
+    }
+    img {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    h3 {
+        color: #AA0601;
+        line-height: $lh-xl;
+        font-size: $font-xl;
+        font-style: italic;
+        font-weight: bold;
+    }
+}
+
+.co-branding {
+    background: url("../images/index-bg.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 0 12px;
+    .co-branding-container {
+        max-width: 1296px;
+        margin: 0 auto;
+    }
+    h2 {
+        color: $light;
+        line-height: $lh-xl;
+        font-size: $font-xl;
+        padding: 80px 0 48px 0;
+        font-weight: bold;
+
+        @include phone {
+            line-height: $lh-m;
+            font-size: $font-m;
+        }
+    }
+    h3 {
+        color: $primary;
+        background: $light;
+        font-weight: bold;
+        font-style: italic;
+        line-height: $lh-xl;
+        font-size: $font-xl;
+        padding: 8px 0;
+        margin-bottom: 80px;
+    }
+    ul {
+        margin: 0 -12px;
+        display: flex;
+        padding: 0 12px;
+
+        @include pad {
+            flex-wrap: wrap;
+        }
+    }
+    img {
+        width: 100%;
+    }
+
+    @include pad {
+        background: url("../images/index-bg-md.png");
+    }
+
+    @include phone {
+        background: url("../images/index-bg-sm.png");
+    }
+}
+
+.recommand-container {
+    max-width: 1296px;
+    margin: 0 auto;
+    padding: 0 12px;
+    text-align: center;
+
+    h2 {
+        line-height: $lh-xl;
+        font-size: $font-xl;
+        color: $secondary;
+        font-weight: bold;
+        padding: 80px 0 48px 0;
+
+        @include phone {
+            line-height: $lh-m;
+            font-size: $font-m;
+        }
+    }
+    ul {
+        display: flex;
+        margin: 0 auto;
+
+        @include pad {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    img {
+        width: 100%;
+    }
+    li {
+        margin: 0 12px;
+        text-align: left;
+        margin-bottom: 80px;
+        box-shadow: 0px 2px 6px 0px $shadow;
+
+        @include pad {
+            width: 40%;
+        }
+
+        @include phone {
+            width: 100%;
+        }
+    }
+    .name {
+        margin: 16px 0 8px 16px;
+    }
+    .comment {
+        margin: 0 0 48px 16px;
+    }
+    .date {
+        color: $date;
+        padding-bottom: 16px;
+        margin-left: 16px;
+    }
+}
+
+.contact-us {
+    background: $info;
+    .contact-us-container {
+        max-width: 636px;
+        margin: 0 auto;
+        padding: 0 12px;
+        text-align: center;
+    }
+    h2 {
+        line-height: $lh-xl;
+        font-size: $font-xl;
+        color: $secondary;
+        font-weight: bold;
+        padding: 80px 12px 48px 12px;
+        margin: 0 -12px;
+
+        @include phone {
+            line-height: $lh-m;
+            font-size: $font-m;
+        }
+    }
+    p {
+        line-height: 30px;
+        font-size: 20px;
+        margin: 0 -12px 24px -12px;
+        padding: 0 12px;
+        text-align: left;
+
+        @include phone {
+            line-height: $lh-s;
+            font-size: $font-s;
+        }
+    }
+    form {
+        text-align: left;
+        padding: 0 12px 80px 12px;
+        margin: 0 -12px;
+    }
+    input,
+    textarea {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .agree {
+        width: auto;
+        margin-bottom: 0px;
+    }
+    button {
+        display: inline-block;
+        background: $primary;
+        color: $light;
+        padding: 12px 176px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+
+        @include pad {
+            padding: 12px 142px;
+        }
+    }
+    .center {
+        margin-top: 48px;
+        text-align: center;
+
+        @include pad {
+            margin-top: 36px;
+        }
+
+        @include phone {
+            margin-top: 24px;
+        }
+    }
+}

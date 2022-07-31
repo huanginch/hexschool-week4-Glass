@@ -1,0 +1,233 @@
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+
+    li {
+        width: 33.333%;
+        &:hover,
+        &:focus {
+            border-left: 1px solid $border;
+            border-right: 1px solid $border;
+            border-bottom: 8px solid $primary;
+        }
+    }
+
+    a {
+        color: $dark;
+        line-height: $lh-s*2;
+        font-size: $font-s*2;
+        padding: 0 20%;
+        font-weight: 500;
+
+        @include pad {
+            line-height: $lh-m;
+            font-size: $font-m;
+        }
+
+        @include phone {
+            line-height: $lh-s;
+            font-size: $font-s;
+        }
+    }
+}
+
+.m-active {
+    border-left: 1px solid $border;
+    border-right: 1px solid $border;
+    border-bottom: 8px solid $primary;
+}
+
+.banner-p1 {
+    display: flex;
+    margin-bottom: 80px;
+
+    li {
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner-l {
+        width: 100%;
+        height: 296px;
+        background: url(../images/product-header-1.png) center no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        @include pad {
+            background-image: url(../images/product-header-sm-1.png);
+        }
+
+        @include phone {
+            height: 136px;
+        }
+    }
+
+    .banner-r {
+        width: 100%;
+        height: 296px;
+        background: url(../images/product-header-2.png) center no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        @include pad {
+            background-image: url(../images/product-header-sm-2.png);
+        }
+
+        @include phone {
+            height: 136px;
+        }
+    }
+
+    @include pad {
+        margin-bottom: 40px;
+    }
+}
+
+.product-p1 {
+    max-width: 1296px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 12px;
+
+    h1 {
+        line-height: 63px;
+        font-size: 42px;
+        font-weight: 500;
+
+        @include phone {
+            line-height: $lh-m;
+            font-size: $font-m;
+        }
+    }
+
+    h2 {
+        line-height: $lh-s*2;
+        font-size: $font-s*2;
+        margin-bottom: 32px;
+
+        @include phone {
+            line-height: $lh-m;
+            font-size: $font-m;
+        }
+    }
+
+    .product__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 -12px;
+
+        &>li {
+            width: 25%;
+            height: auto;
+            margin-bottom: 80px;
+            padding: 0 12px;
+
+            @include pad {
+                width: 50%;
+                height: auto;
+                margin-bottom: 40px;
+            }
+
+            @include phone {
+                width: 100%;
+                height: auto;
+                margin-bottom: 48px;
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .product__details {
+            max-width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            h3 {
+                line-height: $lh-m;
+                font-size: $font-m;
+            }
+        }
+
+        .product__price {
+            color: $primary;
+            font-weight: 500;
+        }
+
+        .color {
+            display: flex;
+        }
+
+        .block1 {
+            width: 24px;
+            height: 24px;
+            background-color: $block;
+            margin-right: 8px;
+            border-radius: 4px;
+        }
+
+        .block2 {
+            width: 24px;
+            height: 24px;
+            background-color: $hover;
+            border-radius: 4px;
+        }
+    }
+}
+
+.pages {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    padding: 0 12px;
+
+    a {
+        display: block;
+        color: $other;
+        line-height: 27px;
+        font-size: 18px;
+        padding: 12px 16px;
+        border: 1px solid $other;
+
+        &:hover,
+        &:focus {
+            color: $light;
+            background: $dark;
+        }
+
+        @include phone {
+            line-height: $lh-s;
+            font-size: $font-s;
+            padding: 11px 11px;
+        }
+    }
+
+    .pages__edge {
+        line-height: 29px;
+        font-size: 19px;
+        padding: 11px 16px;
+
+        @include phone {
+            line-height: $lh-s;
+            font-size: $font-s;
+            padding: 11px 10px;
+        }
+    }
+
+    .active {
+        background: $dark;
+
+        a {
+            color: $light;
+        }
+    }
+}

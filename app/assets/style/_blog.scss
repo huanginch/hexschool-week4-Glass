@@ -1,0 +1,146 @@
+.blog-navbar {
+    background: $secondary;
+    color: $light;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    padding: 0 12px;
+
+    @include phone {
+        display: none;
+    }
+}
+
+.blog-nav-container {
+    max-width: 1296px;
+    margin: 0 auto;
+    padding: 13px 0px;
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+        display: flex;
+    }
+
+    a {
+        color: $light;
+        display: block;
+        padding-right: 48px;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+    span {
+        margin-right: -48px;
+    }
+
+    @include pad {
+        max-width: 696px;
+    }
+}
+
+.blog-content {
+    max-width: 1296px;
+    margin: 0 auto 80px auto;
+
+    h1 {
+        line-height: $lh-xl;
+        font-size: $font-xl;
+        margin: 96px 0px 32px 12px;
+        padding-left: 16px;
+        border-left: 8px solid $primary;
+        font-weight: bold;
+
+        @include phone {
+            line-height: $lh-m;
+            font-size: $font-m;
+        }
+    }
+
+    li {
+        width: 100%;
+        
+    }
+
+    li:not(:last-child) {
+        margin-bottom: 60px;
+    }
+
+    a {
+        display: flex;
+        padding: 0 12px;
+        position: relative;
+
+        &:hover {
+            box-shadow: 4px 4px 6px 0px $shadow;
+        }
+
+        @include phone {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    img {
+        width: 50%;
+
+        @include phone {
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    .blog-content__text {
+        width: 50%;
+        padding: 0 12px;
+
+        @include phone {
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    h2 {
+        color: $secondary;
+        line-height: $lh-s*2;
+        font-size: $font-s*2;
+    }
+
+    h3 {
+        color: $dark;
+        line-height: 30px;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        font-weight: 500;
+
+        span {
+            line-height: $lh-s;
+            font-size: $font-s;
+        }
+    }
+
+    p {
+        color: $other;
+
+        @include phone {
+            display: none;
+        }
+    }
+
+    .more {
+        color: $secondary;
+        line-height: $lh-l;
+        font-size: $font-l;
+        font-weight: 900;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        @include pad {
+            display: none;
+        }
+    }
+}
