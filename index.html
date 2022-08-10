@@ -13,9 +13,9 @@
 
 <body>
   <header>
-    <div class="header-container">
-      <a href="./"><img src="./assets/images/logo-white.png" alt="logo"></a>
-      <ul class="navbar">
+    <div class="container d-flex jc-sb ai-center">
+      <a href="./" class="logo"><img src="./assets/images/logo-white.png" alt="logo"></a>
+      <ul class="navbar d-flex jc-sb">
         <li><a href="./product1.html">系列鏡框</a></li>
         <li><a href="./stores.html">門市據點</a></li>
         <li><a href="./blog.html">部落格</a></li>
@@ -32,16 +32,16 @@
   
 <main>
   <section class="home-banner">
-    <div class="banner-title">
+    <div class="container banner-title d-flex">
       <h2>Promise-Desert 2020 早春系列</h2>
       <h1>看得清，才能看得遠</h1>
       <button>立即購買</button>
   </section>
   </div>
   <section class="intro">
-    <div class="intro-content">
+    <div class="container">
       <h2>用專業的心，做專業的事</h2>
-      <ul class="intro-cards">
+      <ul class="intro-cards d-flex">
         <li>
           <img src="./assets/images/home-section2-1.png" alt="price">
           <h3>單一價格</h3>
@@ -65,9 +65,9 @@
       </ul>
     </div>
   </section>
-  <section class="classic">
+  <section class="container classic">
     <h2>經典系列鏡框</h2>
-    <ul>
+    <ul class="d-flex">
       <li>
         <img src="./assets/images/home-section3-1.png" alt="classic-1">
         <h3>OPTICAL</h3>
@@ -83,9 +83,9 @@
     </ul>
   </section>
   <section class="co-branding">
-    <div class="co-branding-container">
+    <div class="container">
       <h2>聯名設計鏡框</h2>
-      <ul>
+      <ul class="d-flex">
         <li>
           <img src="./assets/images/home-section4-1.png" alt="co-branding-1">
           <h3>DOUBLE A+</h3>
@@ -98,9 +98,9 @@
     </div>
   </section>
   <section class="recommand">
-    <div class="recommand-container">
+    <div class="container">
       <h2>顧客推薦</h2>
-      <ul>
+      <ul class="d-flex">
         <li>
           <img src="./assets/images/home-section5-1.png" alt="recommand-1">
           <p class="name">Jessy</p>
@@ -129,29 +129,20 @@
     </div>
   </section>
   <section class="contact-us">
-    <div class="contact-us-container">
+    <div class="container contact-us-container">
       <h2>聯絡我們</h2>
       <p>我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
       <form action="">
         <label for="name">姓名</label>
-        <br>
-        <input type="text" id="name" placeholder="陳小明">
-        <br>
-        <label for="tel">聯絡電話</label>
-        <br>
-        <input type="tel" id="tel" placeholder="0912-345-678">
-        <br>
+        <input type="text" id="name" placeholder="陳小明">       
+        <label for="tel">聯絡電話</label>        
+        <input type="tel" id="tel" placeholder="0912-345-678"> 
         <label for="mail">電子郵件</label>
-        <br>
         <input type="mail" id="mail" placeholder="example@email.com">
-        <br>
         <label for="options">意見反應</label>
-        <br>
-        <textarea id="options" cols="30" rows="10" placeholder="請輸入您的意見"></textarea>
-        <br>
+        <textarea id="options" cols="30" rows="10" placeholder="請輸入您的意見"></textarea>        
         <input type="checkbox" id="agree" class="agree">
         <label for="agree" class="agree">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
-        <br>
         <div class="center">
           <button>確認送出</button>
         </div>
@@ -161,40 +152,42 @@
 </main>
 
   <footer>
-    <div class="contact">
-      <div>
-        <ul class="contact__navbar">
-          <li><a href="./">首頁</a></li>
-          <li><a href="./product1.html">系列鏡框</a></li>
-          <li><a href="./stores.html">門市據點</a></li>
-          <li><a href="./blog.html">部落格</a></li>
-          <li><a href="./faq.html">常見問題</a></li>
+    <div class="container">
+      <div class="contact d-flex jc-sb ai-start">
+        <div>
+          <ul class="contact__navbar d-flex">
+            <li><a href="./">首頁</a></li>
+            <li><a href="./product1.html">系列鏡框</a></li>
+            <li><a href="./stores.html">門市據點</a></li>
+            <li><a href="./blog.html">部落格</a></li>
+            <li><a href="./faq.html">常見問題</a></li>
+          </ul>
+          <div class="contact__phone">
+            <span class="material-symbols-outlined">
+              call
+            </span>
+            <a href="tel+:0800-000-000">0800-000-000</a>
+          </div>
+          <div class="contact__mail">
+            <span class="material-symbols-outlined">
+              mail
+            </span>
+            <a href="mailto:glasses@business.com">glasses@business.com</a>
+          </div>
+        </div>
+        <ul class="social d-flex jc-sb">
+          <li><a href="#"><img src="./assets/images/ic-social-fb.png" alt="fb"></a></li>
+          <li><a href="#"><img src="./assets/images/ic_social_ig.png " alt="ig"></a></li>
+          <li><a href="#"><img src="./assets/images/ic_social_line.png" alt="line"></a></li>
         </ul>
-        <div class="contact__phone">
-          <span class="material-symbols-outlined">
-            call
-          </span>
-          <a href="tel+:0800-000-000">0800-000-000</a>
-        </div>
-        <div class="contact__mail">
-          <span class="material-symbols-outlined">
-            mail
-          </span>
-          <a href="mailto:glasses@business.com">glasses@business.com</a>
-        </div>
       </div>
-      <ul class="social">
-        <li><a href="#"><img src="./assets/images/ic-social-fb.png" alt="fb"></a></li>
-        <li><a href="#"><img src="./assets/images/ic_social_ig.png " alt="ig"></a></li>
-        <li><a href="#"><img src="./assets/images/ic_social_line.png" alt="line"></a></li>
-      </ul>
-    </div>
-    <div class="copyright">
-      <p>Copyright © 2020 Glasses.All rights reserved.</p>
-      <ul class="copyright__links">
-        <li><a href="#" class="privacy">隱私權政策</a></li>
-        <li><a href="#">服務條款</a></li>
-      </ul>
+      <div class="copyright d-flex jc-sb ai-center">
+        <p>Copyright © 2020 Glasses.All rights reserved.</p>
+        <ul class="copyright__links d-flex">
+          <li><a href="#" class="privacy">隱私權政策</a></li>
+          <li><a href="#">服務條款</a></li>
+        </ul>
+      </div>
     </div>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
