@@ -1,19 +1,22 @@
 // basic style
-@import "reset";
-@import "variable";
-@import "mixin";
-@import "base";
-@import "layout";
+@import "./helper/reset";
+@import "./helper/variable";
+@import "./helper/mixin";
+@import "./helper/base";
+@import "./helper/utilities";
+
+// layout style
+@import "./layout/layout";
 
 // pages style
-@import "index";
-@import "product1";
-@import "product2";
-@import "stores";
-@import "store-info";
-@import "blog";
-@import "blog-info";
-@import "faq";
+@import "./pages/index";
+@import "./pages/product1";
+@import "./pages/product2";
+@import "./pages/stores";
+@import "./pages/store-info";
+@import "./pages/blog";
+@import "./pages/blog-info";
+@import "./pages/faq";
 
 // font link
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto+Mono:ital,wght@0,400;1,100;1,400&family=Roboto:wght@400;500;900&display=swap");

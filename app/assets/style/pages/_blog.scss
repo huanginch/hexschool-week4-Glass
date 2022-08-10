@@ -4,50 +4,44 @@
     line-height: 30px;
     font-size: 20px;
     text-align: center;
-    padding: 0 12px;
-
-    @include phone {
-        display: none;
-    }
-}
-
-.blog-nav-container {
-    max-width: 1296px;
-    margin: 0 auto;
-    padding: 13px 0px;
-    display: flex;
-    justify-content: space-between;
 
     ul {
-        display: flex;
+        width: 45%;
+
+        @include pad {
+            width: 80%;
+        }
+
+        @include phone {
+            width: 100%;
+        }
     }
 
     a {
         color: $light;
         display: block;
-        padding-right: 48px;
-
         &:hover {
             opacity: 0.5;
         }
     }
-    span {
-        margin-right: -48px;
+
+    .search {
+        @include phone {
+            display: none;
+        }
     }
 
-    @include pad {
-        max-width: 696px;
-    }
 }
 
 .blog-content {
-    max-width: 1296px;
-    margin: 0 auto 80px auto;
+    margin-bottom: 80px;
+    text-align: left;
 
     h1 {
+        text-align-last: left;
         line-height: $lh-xl;
         font-size: $font-xl;
-        margin: 96px 0px 32px 12px;
+        margin: 96px 0px 32px 0px;
         padding-left: 16px;
         border-left: 8px solid $primary;
         font-weight: bold;
@@ -58,18 +52,15 @@
         }
     }
 
-    li {
-        width: 100%;
-        
-    }
-
     li:not(:last-child) {
         margin-bottom: 60px;
+
+        @include pad {
+            margin-bottom: 24px;
+        }
     }
 
     a {
-        display: flex;
-        padding: 0 12px;
         position: relative;
 
         &:hover {
@@ -84,6 +75,9 @@
 
     img {
         width: 50%;
+        padding-right: 12px;
+
+       
 
         @include phone {
             width: 100%;
@@ -105,6 +99,11 @@
         color: $secondary;
         line-height: $lh-s*2;
         font-size: $font-s*2;
+
+        @include pad {
+            line-height: $lh-m;
+            font-size: $font-m;
+        }
     }
 
     h3 {
@@ -119,6 +118,12 @@
         span {
             line-height: $lh-s;
             font-size: $font-s;
+        }
+
+        @include pad {
+            line-height: $lh-s;
+            font-size: $font-s;
+            margin-bottom: 4px;
         }
     }
 
@@ -140,7 +145,10 @@
         right: 0;
 
         @include pad {
-            display: none;
+            color: $other;
+            line-height: $lh-s;
+            font-size: $font-s;
+            font-weight: 400;
         }
     }
 }

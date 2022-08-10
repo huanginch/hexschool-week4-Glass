@@ -7,16 +7,16 @@ current: index
 
 <main>
   <section class="home-banner">
-    <div class="banner-title">
+    <div class="container banner-title d-flex">
       <h2>Promise-Desert 2020 早春系列</h2>
       <h1>看得清，才能看得遠</h1>
       <button>立即購買</button>
   </section>
   </div>
   <section class="intro">
-    <div class="intro-content">
+    <div class="container">
       <h2>用專業的心，做專業的事</h2>
-      <ul class="intro-cards">
+      <ul class="intro-cards d-flex">
         <li>
           <img src="./assets/images/home-section2-1.png" alt="price">
           <h3>單一價格</h3>
@@ -40,9 +40,9 @@ current: index
       </ul>
     </div>
   </section>
-  <section class="classic">
+  <section class="container classic">
     <h2>經典系列鏡框</h2>
-    <ul>
+    <ul class="d-flex">
       <li>
         <img src="./assets/images/home-section3-1.png" alt="classic-1">
         <h3>OPTICAL</h3>
@@ -58,9 +58,9 @@ current: index
     </ul>
   </section>
   <section class="co-branding">
-    <div class="co-branding-container">
+    <div class="container">
       <h2>聯名設計鏡框</h2>
-      <ul>
+      <ul class="d-flex">
         <li>
           <img src="./assets/images/home-section4-1.png" alt="co-branding-1">
           <h3>DOUBLE A+</h3>
@@ -73,9 +73,9 @@ current: index
     </div>
   </section>
   <section class="recommand">
-    <div class="recommand-container">
+    <div class="container">
       <h2>顧客推薦</h2>
-      <ul>
+      <ul class="d-flex">
         <li>
           <img src="./assets/images/home-section5-1.png" alt="recommand-1">
           <p class="name">Jessy</p>
@@ -104,29 +104,20 @@ current: index
     </div>
   </section>
   <section class="contact-us">
-    <div class="contact-us-container">
+    <div class="container contact-us-container">
       <h2>聯絡我們</h2>
       <p>我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
       <form action="">
         <label for="name">姓名</label>
-        <br>
-        <input type="text" id="name" placeholder="陳小明">
-        <br>
-        <label for="tel">聯絡電話</label>
-        <br>
-        <input type="tel" id="tel" placeholder="0912-345-678">
-        <br>
+        <input type="text" id="name" placeholder="陳小明">       
+        <label for="tel">聯絡電話</label>        
+        <input type="tel" id="tel" placeholder="0912-345-678"> 
         <label for="mail">電子郵件</label>
-        <br>
         <input type="mail" id="mail" placeholder="example@email.com">
-        <br>
         <label for="options">意見反應</label>
-        <br>
-        <textarea id="options" cols="30" rows="10" placeholder="請輸入您的意見"></textarea>
-        <br>
+        <textarea id="options" cols="30" rows="10" placeholder="請輸入您的意見"></textarea>        
         <input type="checkbox" id="agree" class="agree">
         <label for="agree" class="agree">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
-        <br>
         <div class="center">
           <button>確認送出</button>
         </div>

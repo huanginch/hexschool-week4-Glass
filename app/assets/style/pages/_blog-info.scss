@@ -1,16 +1,8 @@
-.path {
-    max-width: 1296px;
-    margin: 0 auto;
-    padding: 0 12px;
-
-    @include pad {
-        max-width: 696px;
-    }
-}
 .path-container {
-    margin: 0 -12px;
-    padding:24px 0px 8px 0px;
+    margin-top: 24px;
+    text-align: left;
     a {
+        
         color: $dark;
         line-height: $lh-s;
         font-size: $font-s;
@@ -23,21 +15,14 @@
     .current {
         color: $primary;
     }
+
 }
 
 .current-tags {
-    max-width: 1296px;
-    margin: 0 auto;
-    padding-left: 12px;
-
-    @include pad {
-        max-width: 696px;
+    &-container {
+        text-align: left;
     }
-}
-
-.current-tags-container {
-    margin: 0 -12px;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
     a {
         line-height: $lh-m;
         font-size: $font-m;
@@ -56,19 +41,10 @@
     }
 }
 
-.blog-body {
-    display: flex;
-    max-width: 1296px;
-    margin: 0 auto;
-
-    @include pad {
-        max-width: 696px;
-    }
-}
-
 .blog-info__content {
+    text-align: left;
     width: 70%;
-    padding: 0 12px;
+    padding-right: 12px;
     h1 {
         line-height: $lh-xl;
         font-size: $font-xl;
@@ -98,28 +74,36 @@
     }
 
     .blog-info__post {
-        margin: 0 -12px;
 
-        &>li {
-            padding: 0 12px;
+        p {
             margin-bottom: 40px;
+            color: $other;
 
-            &>img {
-                width: 100%;
-                margin-bottom: 8px;
+            @include pad {
+                margin-bottom: 24px;
+            }
+
+            @include pad {
+                margin-bottom: 16px;
             }
         }
 
-        p {
-            color: $other;
-        }
+        img {
+            width: 100%;
+            margin-bottom: 8px;
 
+            @include pad {
+                margin-bottom: 16px;
+            }
+
+            @include phone {
+                margin-bottom: 8px;
+            }
+        }
         
     }
 
     .share {
-        display: flex;
-        align-items: center;
         border-bottom: 1px solid $date;
         padding-bottom: 16px;
         margin-bottom: 24px;
@@ -152,14 +136,10 @@
     }
 
     .blog-info__pages {
-        display: flex;
+        text-align: left;
         margin-bottom: 80px;
-        justify-content: space-between;
-        align-items: center;
         a {
             color: $dark;
-            display: flex;
-            align-items: center;
 
             &:hover {
                 opacity: 0.5;
@@ -177,6 +157,7 @@
 
     @include phone {
         width: 100%;
+        padding-right: 0;
     }
 }
 
@@ -184,9 +165,9 @@
     width: 30%;
 
     .tags__title {
+        text-align: left;
         color: $primary;
         font-weight: bold;
-        display: flex;
         line-height: $lh-s*2;
         font-size: $font-s*2;
         align-items: center;
@@ -203,6 +184,10 @@
             }
         }
         
+    }
+
+    ul {
+        text-align: left;
     }
 
     a {

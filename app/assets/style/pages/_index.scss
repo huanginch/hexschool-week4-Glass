@@ -5,7 +5,6 @@
     background-size: cover;
     background-position: center;
     color: $secondary;
-    padding: 0 12px;
     h1 {
         line-height: $lh-2xl;
         font-size: $font-2xl;
@@ -33,20 +32,18 @@
         color: $light;
         padding: 6px 12px;
         cursor: pointer;
+        transition: all 0.5s ease;
+
+        &:hover {
+            background-color: $hover;
+        }
     }
     .banner-title {
-        max-width: 1296px;
-        margin: 0 auto;
         text-align: right;
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
-        padding-top: 296px;
-
-        @include pad {
-            padding-top: 144px;
-        }
+        height: 100%;
     }
 
     @include pad {
@@ -55,32 +52,26 @@
         height: 396px;
         background-size: cover;
         background-position: center;
-        color: $secondary;
     }
 }
 
 .intro {
     background: $info;
-    .intro-content {
-        max-width: 1296px;
-        margin: 0 auto;
-        text-align: center;
-        padding: 0 12px;
-        h2 {
-            color: $secondary;
-            line-height: $lh-xl;
-            font-size: $font-xl;
-            font-weight: bold;
-            padding: 80px 0 24px 0;
+    text-align: center;
+    h2 {
+        color: $secondary;
+        line-height: $lh-xl;
+        font-size: $font-xl;
+        font-weight: bold;
+        padding-top: 80px;
+        margin-bottom: 24px;
 
-            @include phone {
-                line-height: $lh-m;
-                font-size: $font-m;
-            }
+        @include phone {
+            line-height: $lh-m;
+            font-size: $font-m;
         }
     }
     .intro-cards {
-        display: flex;
         justify-content: center;
         align-items: baseline;
         padding-bottom: 80px;
@@ -90,7 +81,6 @@
         }
         img {
             width: 100px;
-            height: 100px;
             margin-bottom: 16px;
         }
         h3 {
@@ -112,13 +102,9 @@
 }
 
 .classic {
-    max-width: 1296px;
-    margin: 0 auto;
     color: $secondary;
     text-align: center;
-    padding: 0 12px;
     ul {
-        display: flex;
         justify-content: space-between;
         margin: 0 -12px 80px -12px;
 
@@ -142,7 +128,6 @@
         }
     }
     img {
-        width: 100%;
         margin-bottom: 8px;
     }
     h3 {
@@ -158,17 +143,13 @@
     background: url("../images/index-bg.png") no-repeat;
     background-position: center;
     background-size: cover;
-    text-align: center;
-    padding: 0 12px;
-    .co-branding-container {
-        max-width: 1296px;
-        margin: 0 auto;
-    }
+    
     h2 {
-        color: $light;
         line-height: $lh-xl;
         font-size: $font-xl;
-        padding: 80px 0 48px 0;
+        padding-top: 80px;
+        margin-bottom: 48px;
+        color: $light;
         font-weight: bold;
 
         @include phone {
@@ -187,16 +168,9 @@
         margin-bottom: 80px;
     }
     ul {
-        margin: 0 -12px;
-        display: flex;
-        padding: 0 12px;
-
         @include pad {
             flex-wrap: wrap;
         }
-    }
-    img {
-        width: 100%;
     }
 
     @include pad {
@@ -208,11 +182,7 @@
     }
 }
 
-.recommand-container {
-    max-width: 1296px;
-    margin: 0 auto;
-    padding: 0 12px;
-    text-align: center;
+.recommand {
 
     h2 {
         line-height: $lh-xl;
@@ -227,16 +197,11 @@
         }
     }
     ul {
-        display: flex;
-        margin: 0 auto;
-
+        margin: 0 -12px;
         @include pad {
             flex-wrap: wrap;
             justify-content: center;
         }
-    }
-    img {
-        width: 100%;
     }
     li {
         margin: 0 12px;
@@ -251,6 +216,9 @@
         @include phone {
             width: 100%;
         }
+    }
+    img{
+        width: 100%;
     }
     .name {
         margin: 16px 0 8px 16px;
@@ -268,18 +236,23 @@
 .contact-us {
     background: $info;
     .contact-us-container {
-        max-width: 636px;
-        margin: 0 auto;
-        padding: 0 12px;
-        text-align: center;
+        width: 50%;
+
+        @include pad {
+            width: 80%;
+        }
+
+        @include phone {
+            width: 100%;
+        }
     }
     h2 {
         line-height: $lh-xl;
         font-size: $font-xl;
         color: $secondary;
         font-weight: bold;
-        padding: 80px 12px 48px 12px;
-        margin: 0 -12px;
+        padding-top: 80px;
+        margin-bottom: 48px;
 
         @include phone {
             line-height: $lh-m;
@@ -289,8 +262,7 @@
     p {
         line-height: 30px;
         font-size: 20px;
-        margin: 0 -12px 24px -12px;
-        padding: 0 12px;
+        margin-bottom: 24px;
         text-align: left;
 
         @include phone {
@@ -300,17 +272,21 @@
     }
     form {
         text-align: left;
-        padding: 0 12px 80px 12px;
-        margin: 0 -12px;
+        padding-bottom: 80px;
     }
     input,
     textarea {
         width: 100%;
         margin-bottom: 16px;
+        background-color: $info;
+    }
+    label {
+        margin-bottom: 8px;
     }
     .agree {
         width: auto;
         margin-bottom: 0px;
+        padding: 6px 0 6px 12px;
     }
     button {
         display: inline-block;
@@ -320,6 +296,11 @@
         border: none;
         font-weight: bold;
         cursor: pointer;
+        transition: all .5s ease;
+
+        &:hover {
+            background-color: $hover;
+        }
 
         @include pad {
             padding: 12px 142px;

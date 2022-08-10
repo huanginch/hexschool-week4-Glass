@@ -1,7 +1,28 @@
-body {
-    line-height: $lh-s;
-    font-size: $font-s;
-    font-family: Roboto, "Noto Sans TC", sans-serif;
+.container {
+    margin: 0 auto;
+    padding: 0 12px;
+    max-width: 1296px;
+    text-align: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.ai-start {
+    align-items: start;
 }
 
 .mb-8 {
