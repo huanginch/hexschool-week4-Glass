@@ -910,6 +910,9 @@ footer {
   padding-left: 16px;
   border-left: 8px solid #AA0601;
   font-weight: bold; }
+  @media (max-width: 995px) {
+    .stores h1 {
+      margin-top: 80px; } }
   @media (max-width: 767px) {
     .stores h1 {
       line-height: 36px;
@@ -927,8 +930,13 @@ footer {
     line-height: 27px;
     font-size: 18px;
     padding: 6px 0 6px 12px;
-    width: 25%;
-    height: 38px; }
+    width: 25%; }
+    @media (max-width: 995px) {
+      .stores .selector select {
+        width: 40%; } }
+    @media (max-width: 767px) {
+      .stores .selector select {
+        width: 60%; } }
 
 .stores__list {
   margin: 0 -12px 80px -12px;
@@ -995,6 +1003,9 @@ footer {
   padding-left: 16px;
   border-left: 8px solid #AA0601;
   font-weight: bold; }
+  @media (max-width: 995px) {
+    .store-info h1 {
+      margin-top: 80px; } }
   @media (max-width: 767px) {
     .store-info h1 {
       line-height: 36px;
@@ -1018,7 +1029,7 @@ footer {
         width: 40%; } }
     @media (max-width: 767px) {
       .store-info .selector select {
-        width: 80%; } }
+        width: 60%; } }
 
 .store-info .store-info__content {
   margin-bottom: 80px; }
