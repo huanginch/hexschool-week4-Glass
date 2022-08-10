@@ -9,6 +9,10 @@
         border-left: 8px solid $primary;
         font-weight: bold;
 
+        @include pad {
+            margin-top: 80px;
+        }
+
         @include phone {
             line-height: $lh-m;
             font-size: $font-m;
@@ -36,7 +40,7 @@
             }
 
             @include phone {
-                width: 80%;
+                width: 60%;
             }
         }
     }

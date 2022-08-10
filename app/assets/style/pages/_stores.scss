@@ -8,6 +8,10 @@
         border-left: 8px solid $primary;
         font-weight: bold;
 
+        @include pad {
+            margin-top: 80px;
+        }
+
         @include phone {
             line-height: $lh-m;
             font-size: $font-m;
@@ -26,7 +30,14 @@
             font-size: $font-l*0.5;
             padding: 6px 0 6px 12px;
             width: 25%;
-            height: 38px;
+
+            @include pad {
+                width: 40%;
+            }
+        
+            @include phone {
+                width: 60%;
+            }
         }
     }
 }
