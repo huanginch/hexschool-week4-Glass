@@ -145,6 +145,7 @@
         right: 0;
 
         @include pad {
+            text-transform: lowercase;
             color: $other;
             line-height: $lh-s;
             font-size: $font-s;
