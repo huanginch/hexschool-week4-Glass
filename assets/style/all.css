@@ -149,7 +149,7 @@ body {
 .container {
   margin: 0 auto;
   padding: 0 12px;
-  max-width: 1296px;
+  max-width: 1320px;
   text-align: center; }
 
 .d-flex {
@@ -611,7 +611,8 @@ footer {
   .contact-us textarea {
     width: 100%;
     margin-bottom: 16px;
-    background-color: #FBF2F2; }
+    background-color: #FBF2F2;
+    padding: 6px 0px 6px 12px; }
   .contact-us label {
     margin-bottom: 8px; }
   .contact-us .agree {
@@ -1219,6 +1220,7 @@ footer {
     right: 0; }
     @media (max-width: 995px) {
       .blog-content .more {
+        text-transform: lowercase;
         color: #555555;
         line-height: 24px;
         font-size: 16px;
